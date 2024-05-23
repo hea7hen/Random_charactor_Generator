@@ -1,0 +1,21 @@
+{
+  "name": "team19_charactergenerator",
+  "version": "1.0.0",
+  "description": "```\r .\r │\r ├── controllers\r │       └── userController.js\r ├── models\r │       └── userModel.js\r ├── public\r │       └── styles.css\r ├── views\r │   ├── custom.ejs\r │   ├── home.ejs\r │   ├── index.ejs\r │   └── login.ejs\r │   └── random.ejs\r │   └── register.ejs\r ├── database.sqlite\r ├── index.js\r └── package.json\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "canvas": "^2.11.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "prompt-sync": "^4.2.0",
+    "sqlite3": "^5.1.7"
+  }
+}

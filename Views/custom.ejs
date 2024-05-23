@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Character</title>
+    <link rel="stylesheet" href="/path/to/your/styles.css"> <!-- Optional: Add your stylesheet path -->
+</head>
+<body>
+    <div class="container">
+        <h1>Customize Your Character</h1>
+        <form action="/customize" method="POST">
+            <div>
+                <label for="skinColor">Skin Color (Hex):</label>
+                <input type="text" id="skinColor" name="skinColor" required pattern="^#([A-Fa-f0-9]{6})$">
+            </div>
+            <div>
+                <label for="hairColor">Hair Color (Hex):</label>
+                <input type="text" id="hairColor" name="hairColor" required pattern="^#([A-Fa-f0-9]{6})$">
+            </div>
+            <div>
+                <label for="shirtColor">Shirt Color (Hex):</label>
+                <input type="text" id="shirtColor" name="shirtColor" required pattern="^#([A-Fa-f0-9]{6})$">
+            </div>
+            <div>
+                <label for="jacketColor">Jacket Color (Hex):</label>
+                <input type="text" id="jacketColor" name="jacketColor" required pattern="^#([A-Fa-f0-9]{6})$">
+            </div>
+            <div>
+                <label for="pantColor">Pant Color (Hex):</label>
+                <input type="text" id="pantColor" name="pantColor" required pattern="^#([A-Fa-f0-9]{6})$">
+            </div>
+            <div>
+                <label for="bootsColor">Boots Color (Hex):</label>
+                <input type="text" id="bootsColor" name="bootsColor" required pattern="^#([A-Fa-f0-9]{6})$">
+            </div>
+            <div>
+                <label for="eyeColor">Eye Color (Hex):</label>
+                <input type="text" id="eyeColor" name="eyeColor" required pattern="^#([A-Fa-f0-9]{6})$">
+            </div>
+            <div>
+                <label for="lipColor">Lip Color (Hex):</label>
+                <input type="text" id="lipColor" name="lipColor" required pattern="^#([A-Fa-f0-9]{6})$">
+            </div>
+            <div>
+                <button type="submit">Customize</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
