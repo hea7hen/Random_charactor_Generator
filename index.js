@@ -4,8 +4,8 @@ const session = require('express-session');
 const path = require('path');
 const userController = require('./Controllers/userControllers');
 const randomController = require('./Controllers/randomController.js');
+const customController = require('./Controllers/customController.js');
 
-// const recipeController = require('./controllers/recipeController');
 require('./databaseInit');
 
 const app = express();
@@ -34,11 +34,15 @@ app.get('/home', (req, res) => {
 });
 
 app.get('/generate', randomController.generateRandomCharacter);
+app.post('/customize', customController.customizeCharacter);
+
 
 app.get('/random', (req, res) => {
     res.render('random');
 });
-
+app.get('/custom', (req, res) => {
+    res.render('custom');
+});
 
 
 const port = process.env.PORT || 8000;
