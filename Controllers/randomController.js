@@ -51,7 +51,7 @@ module.exports.generateRandomCharacter = (req, res) => {
     drawRect(ctx, 100, 380, 40, 20, shoeColor); // Right shoe
 
     const buffer = canvas.toBuffer('image/png');
-    fs.writeFileSync('./public/minecraft-character.png', buffer);
-    console.log('Character image generated and saved as minecraft-character.png');
-    res.sendFile(path.join(__dirname, '../public/minecraft-character.png'));
+    fs.writeFileSync('./public/minecraft-character-random.png', buffer);
+    console.log('Character image generated and saved as minecraft-character-random.png');
+    res.sendFile(path.join(__dirname, '../public/minecraft-character-random.png'));
 };
